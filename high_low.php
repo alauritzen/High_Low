@@ -4,8 +4,8 @@ $randomNum=rand(1, 100);
 $guess=0;
 $attempts=0;
 
+fwrite (STDOUT, "Guess the number between 1 and 100!\n");
 while ($guess!=$randomNum) {
-    fwrite (STDOUT, "Guess the number between 1 and 100!\n");
     $guess=fgets(STDIN);
     $attempts++;
     if ($guess>$randomNum) {
